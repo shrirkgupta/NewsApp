@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background: #9dc7e2;
+}
+.logo{
+  color: rgb(250, 14, 14);
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: oblique;
+  box-shadow: 0px 2px 0px rgb(245, 209, 6);
+}
+nav{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #02518d;
+  position: relative;
+  height: 70px ;
+  box-shadow: 1px 4px 5px rgb(235, 232, 232);
+  
+
+}
+
+nav ul{
+  display: flex;
+  gap: 35px;
+  color: white;
+  
+}
+nav ul li{
+  list-style-type: none;
+}
+ul li:hover{
+  box-shadow: 0px 2px 9px rgb(233, 233, 236);
+  border-radius: 5px;
+}
+
+.menu-icon{
+  display: none;
+  color: white;
+  font-size: 30px;
+}
+
+/* input{
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 0px 2px 9px rgb(233, 233, 236);
+  
+} */
+
+/* button{
+  box-shadow: 0px 2px 9px rgb(233, 233, 236);
+border-radius: 8px;
+  width: 80px;
+} */
+
+.phonenav{
+  display: none;
+}
+.news p {
+  display: -webkit-box;
+ -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* padding: 5; */
+}
+
+@media (max-width:480px){
+  nav ul{
+      position: absolute;
+      top: 70px;
+      left: 0%;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background: #2583ca;
+      gap: 0;
+  }
+  nav ul li{
+      padding: 20px;
+  }
+  nav ul li input{
+    padding: 20px;  
+  }
+  .menu-icon{
+      display: block;
+      
+  }
+  .mainnav{
+    display: none;
+  }
+
+
+}
